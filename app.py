@@ -1,44 +1,42 @@
 import streamlit as st
 import io
+import whisper
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 
-st.title("🎤 Voice-Based Concept Understanding Analyzer")
+st.title("🎤 Voice-Based Concept Understanding Analyzer (Whisper AI)")
 
-st.write("Upload voice or type text")
+st.write("Upload your voice (.wav or .mp3)")
+
+audio_file = st.file_uploader("Upload Audio", type=["wav", "mp3"])
 
 text = ""
 
-# ---------------- VOICE INPUT ----------------
-audio_file = st.file_uploader("🎤 Upload Voice (.wav)", type=["wav"])
+# ---------------- LOAD WHISPER MODEL ----------------
+@st.cache_resource
+def load_model():
+    return whisper.load_model("base")
 
+model = load_model()
+
+# ---------------- VOICE TO TEXT ----------------
 if audio_file is not None:
-    import speech_recognition as sr
 
-    r = sr.Recognizer()
+    with open("temp_audio.wav", "wb") as f:
+        f.write(audio_file.read())
 
-    with sr.AudioFile(audio_file) as source:
-        audio = r.record(source)
+    result = model.transcribe("temp_audio.wav")
+    text = result["text"]
 
-    try:
-        text = r.recognize_google(audio)
-        st.success("Voice Converted Text:")
-        st.write(text)
-    except:
-        st.error("Could not understand audio")
+    st.success("Transcribed Text:")
+    st.write(text)
 
-# ---------------- TEXT INPUT ----------------
-typed_text = st.text_input("Or Type Text Here")
-
-if typed_text:
-    text = typed_text
-
-# ---------------- PDF ----------------
+# ---------------- PDF FUNCTION ----------------
 def create_pdf(user_text, result):
     buffer = io.BytesIO()
 
     c = canvas.Canvas(buffer, pagesize=letter)
-    c.drawString(100, 750, "Voice-Based Concept Understanding Report")
+    c.drawString(100, 750, "Whisper Voice Analysis Report")
     c.drawString(100, 700, f"Input: {user_text}")
     c.drawString(100, 650, f"Result: {result}")
 
@@ -47,7 +45,7 @@ def create_pdf(user_text, result):
 
     return buffer
 
-# ---------------- ANALYZE ----------------
+# ---------------- ANALYSIS ----------------
 if st.button("Analyze Understanding"):
 
     if text:
@@ -55,10 +53,10 @@ if st.button("Analyze Understanding"):
         text_low = text.lower()
 
         if "machine learning" in text_low:
-            result = "90/100 - Strong 👍"
+            result = "90/100 - Strong Understanding 👍"
 
         elif "ai" in text_low:
-            result = "70/100 - Moderate 🙂"
+            result = "70/100 - Moderate Understanding 🙂"
 
         else:
             result = "40/100 - Needs Improvement ⚠️"
@@ -75,4 +73,4 @@ if st.button("Analyze Understanding"):
         )
 
     else:
-        st.error("Please provide input")
+        st.error("Please upload audio first")
