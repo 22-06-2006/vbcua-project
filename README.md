@@ -1,3 +1,6 @@
+# Voice Based Concept Understanding Analyzer
+
+🚀 **Live App:** https://vbcua-project-gfpmsuadegkdo5fuwjvhgk.streamlit.app
 # 🎤 Voice-Based Concept Understanding Analyzer (VBCUA)
 
 ## 📌 Overview
