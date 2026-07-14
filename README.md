@@ -1,10 +1,15 @@
 # Voice Based Concept Understanding Analyzer
 
 🚀 **Live App:** https://vbcua-project-gfpmsuadegkdo5fuwjvhgk.streamlit.app
+
+**Project Demo video:**  https://drive.google.com/file/d/14FBxmOxxwaq3oL_sGvONMn_B5G1edrQ4/view?usp=sharing:
+
 # 🎤 Voice-Based Concept Understanding Analyzer (VBCUA)
 
 ## 📌 Overview
-The Voice-Based Concept Understanding Analyzer is an AI-based web application that evaluates a user's understanding of concepts using text (or simulated voice input). It provides an automatic score based on the response and generates a downloadable PDF report.
+Traditional assessments mainly evaluate written responses and often fail to measure a student's conceptual understanding through verbal communication.
+
+The Voice-Based Concept Understanding Analyzer addresses this challenge by allowing students to explain concepts through speech. The application automatically transcribes the audio, evaluates semantic similarity with reference concepts, analyzes audio characteristics, calculates a performance score, and generates a downloadable PDF report.
 
 ---
 
@@ -42,6 +47,10 @@ User Input → Analysis → Score Generation → PDF Download
 - README.md → Project description
 
 ---
+# Home Page :
+<img width="1901" height="1026" alt="14210" src="https://github.com/user-attachments/assets/dd3fb08b-312b-47a3-bb98-4e81c78b62f5" />
+
+
 
 ## 🎯 Outcome
 This project helps evaluate conceptual understanding and improves communication skills through automated feedback and reporting.
