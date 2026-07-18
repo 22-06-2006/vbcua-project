@@ -199,7 +199,7 @@ Automatically generated professional PDF report containing the waveform, transcr
 
 Download or watch the demo video:
 
-[📹 Project Demo Video](Assets/demo/project_demo.mp4)
+https://drive.google.com/file/d/1MlhjTyy54bhoYQXlVTx2EBfmqCIQyDSR/view?usp=drive_link
 
 ---
 
