@@ -138,7 +138,8 @@ streamlit run app.py
 
 The landing page of the application where users can view project details, upload student audio, and select the concept reference.
 
-![Home Page](Assets/screenshots/01_home_page.png)
+<img width="1915" height="922" alt="image" src="https://github.com/user-attachments/assets/68d4ca56-82be-454b-a3b6-034d2ab12dab" />
+
 
 ---
 
@@ -146,7 +147,8 @@ The landing page of the application where users can view project details, upload
 
 Students upload their recorded explanation. The application validates the uploaded audio before processing.
 
-![Audio Upload](Assets/screenshots/02_audio_upload.png)
+<img width="1562" height="446" alt="image" src="https://github.com/user-attachments/assets/c69db455-3b59-4851-a4de-8291e48aa6d1" />
+
 
 ---
 
@@ -154,7 +156,8 @@ Students upload their recorded explanation. The application validates the upload
 
 The uploaded audio is converted into a waveform for visualization before AI analysis begins.
 
-![Audio Waveform](Assets/screenshots/03_audio_waveform.png)
+<img width="1572" height="653" alt="image" src="https://github.com/user-attachments/assets/f74aa0df-9930-4ca3-9f96-1d38c578348d" />
+
 
 ---
 
@@ -162,7 +165,8 @@ The uploaded audio is converted into a waveform for visualization before AI anal
 
 The application transcribes the speech, calculates semantic similarity, generates an overall score, assigns a grade, and evaluates conceptual understanding.
 
-![Analysis Results](Assets/screenshots/04_analysis_result.png)
+<img width="1573" height="517" alt="image" src="https://github.com/user-attachments/assets/b0492947-2f0c-426a-96a2-2037ce2d81b8" />
+
 
 ---
 
@@ -170,7 +174,8 @@ The application transcribes the speech, calculates semantic similarity, generate
 
 Personalized suggestions and identified strengths are displayed to help students improve their conceptual understanding.
 
-![AI Suggestions](Assets/screenshots/05_ai_suggestion.png)
+<img width="1635" height="647" alt="image" src="https://github.com/user-attachments/assets/7ebd346f-0567-4b05-a58d-9508c1da8589" />
+
 
 ---
 
@@ -178,7 +183,8 @@ Personalized suggestions and identified strengths are displayed to help students
 
 The final evaluation summary is displayed, and users can download the generated PDF report.
 
-![Final Evaluation](Assets/screenshots/06_final_evaluation.png)
+<img width="1527" height="738" alt="image" src="https://github.com/user-attachments/assets/4b8756b6-e4b6-4fc5-8d8d-75a2c57f6757" />
+
 
 ---
 
@@ -186,7 +192,8 @@ The final evaluation summary is displayed, and users can download the generated 
 
 Automatically generated professional PDF report containing the waveform, transcription, semantic analysis, score, and evaluation.
 
-![Generated PDF Report](Assets/screenshots/07_generated_pdf_report.png)
+<img width="1881" height="857" alt="image" src="https://github.com/user-attachments/assets/7381682d-dd85-4919-b5d1-293f0cfdff03" />
+
 
 ## 🎥 Project Demo
 
