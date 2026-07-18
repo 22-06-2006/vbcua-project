@@ -45,9 +45,9 @@ using speech recognition and semantic analysis.
 
 ### 👨‍💻 Developed By
 
-**varshini chepuri
+** Danturthi Venkata Satya Mythili Ramani
 
-🎓 B.Tech CSE 
+🎓 B.Tech AIML
 
 
 Version 1.0
