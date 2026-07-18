@@ -1,62 +1,265 @@
-# Voice Based Concept Understanding Analyzer
+# 🎙️ Voice-Based Concept Understanding Analyzer
 
-🚀 **Live App:** https://vbcua-project-gfpmsuadegkdo5fuwjvhgk.streamlit.app
+An AI-powered web application that evaluates a student's conceptual understanding by analyzing spoken explanations. The system converts speech to text, compares the explanation with reference concepts using semantic similarity, analyzes voice features, and generates an automated evaluation report.
 
-**Project Demo video:**  https://drive.google.com/file/d/14FBxmOxxwaq3oL_sGvONMn_B5G1edrQ4/view?usp=sharing:
+---
 
-# 🎤 Voice-Based Concept Understanding Analyzer (VBCUA)
+## 📌 Project Overview
 
-## 📌 Overview
 Traditional assessments mainly evaluate written responses and often fail to measure a student's conceptual understanding through verbal communication.
 
-The Voice-Based Concept Understanding Analyzer addresses this challenge by allowing students to explain concepts through speech. The application automatically transcribes the audio, evaluates semantic similarity with reference concepts, analyzes audio characteristics, calculates a performance score, and generates a downloadable PDF report.
+The **Voice-Based Concept Understanding Analyzer** addresses this challenge by allowing students to explain concepts through speech. The application automatically transcribes the audio, evaluates semantic similarity with reference concepts, analyzes audio characteristics, calculates a performance score, and generates a downloadable PDF report.
 
 ---
 
-## Features
+## ✨ Features
 
-- 🎤 User response input (Text/Voice Simulation)
-- 🧠 Concept understanding analysis
-- 📊 Automatic scoring (Strong / Moderate / Needs Improvement)
-- 💬 Instant feedback generation
-- 📄 Downloadable PDF report
+- 🎤 Voice-based concept evaluation
+- 📝 Automatic Speech-to-Text transcription
+- 🧠 Semantic similarity analysis using Sentence Transformers
+- 📊 AI-based concept scoring
+- 📈 Audio waveform visualization
+- 📄 Automatic PDF report generation
 - 🌐 Interactive Streamlit web interface
-- 📁 Simple and user-friendly interface
+- ⚡ Fast and lightweight deployment
 
 ---
 
-## 🛠️ Tech Stack
-- Python
+## 🛠️ Technologies Used
+
+### Frontend
+
 - Streamlit
+- HTML
+- CSS
+
+### Backend
+
+- Python
+
+### Machine Learning
+
+- OpenAI Whisper
+- Sentence Transformers
+- Librosa
+- NumPy
+- Scikit-learn
+
+### Visualization
+
+- Matplotlib
+
+### Report Generation
+
 - ReportLab
 
----
+### Version Control
 
-## ▶️ How to Run
-1. Install dependencies:
-2. Run the application:
----
-
-## 📊 Output Flow
-User Input → Analysis → Score Generation → PDF Download
+- Git
+- GitHub
 
 ---
 
-## 📁 Project Structure
-- app.py → Main application
-- README.md → Project description
+## 📂 Project Structure
+
+```
+Voice-Based Concept Understanding Analyzer
+│
+├── 1. Brainstorming & Ideation
+├── 2. Requirement Analysis
+├── 3. Project Design Phase
+├── 4. Project Planning Phase
+├── 5. Project Development Phase
+├── 6. Project Testing
+├── 7. Project Documentation
+├── 8. Project Demonstration
+│
+├── Assets
+├── Sample Audio
+├── Sample Reports
+│
+├── Source_Code
+│   ├── data
+│   ├── docs
+│   ├── reports
+│   ├── src
+│   ├── app.py
+│   ├── requirements.txt
+│
+└── README.md
+```
 
 ---
-# Home Page :
-<img width="1901" height="1026" alt="14210" src="https://github.com/user-attachments/assets/dd3fb08b-312b-47a3-bb98-4e81c78b62f5" />
 
-# Audio Upload: 
-<img width="1917" height="1077" alt="24210" src="https://github.com/user-attachments/assets/32a6e095-e7f2-4158-8069-574c414ca1d6" />
+## 🚀 Installation
 
-# Ai Analysis :
-<img width="1902" height="1027" alt="44210" src="https://github.com/user-attachments/assets/22f4044a-08ca-47d7-87d2-3b377d8e7261" />
+### Clone the repository
 
-## 🎯 Outcome
-This project helps evaluate conceptual understanding and improves communication skills through automated feedback and reporting.
-<img width="1902" height="1031" alt="54210" src="https://github.com/user-attachments/assets/0efeb3a5-8339-4660-8fde-281e4bfb935f" />
+```bash
+git clone https://github.com/22-06-2006/smartbridge_project_vbcua.git
+```
 
+### Navigate to the project
+
+```bash
+cd Voice-Based-Concept-Understanding-Analyzer
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🎯 Workflow
+
+1. Open the Streamlit application.
+2. Select a concept/topic.
+3. Upload or record student audio.
+4. Convert speech into text.
+5. Compare with reference concepts.
+6. Perform semantic similarity analysis.
+7. Calculate concept understanding score.
+8. Generate and download the PDF report.
+
+---
+
+## 📸 Application Screenshots
+
+### 1. Home Page
+
+The landing page of the application where users can view project details, upload student audio, and select the concept reference.
+
+![Home Page](Assets/screenshots/01_home_page.png)
+
+---
+
+### 2. Audio Upload
+
+Students upload their recorded explanation. The application validates the uploaded audio before processing.
+
+![Audio Upload](Assets/screenshots/02_audio_upload.png)
+
+---
+
+### 3. Audio Waveform
+
+The uploaded audio is converted into a waveform for visualization before AI analysis begins.
+
+![Audio Waveform](Assets/screenshots/03_audio_waveform.png)
+
+---
+
+### 4. AI Analysis Results
+
+The application transcribes the speech, calculates semantic similarity, generates an overall score, assigns a grade, and evaluates conceptual understanding.
+
+![Analysis Results](Assets/screenshots/04_analysis_result.png)
+
+---
+
+### 5. AI Suggestions & Strengths
+
+Personalized suggestions and identified strengths are displayed to help students improve their conceptual understanding.
+
+![AI Suggestions](Assets/screenshots/05_ai_suggestion.png)
+
+---
+
+### 6. Final Evaluation & Report Download
+
+The final evaluation summary is displayed, and users can download the generated PDF report.
+
+![Final Evaluation](Assets/screenshots/06_final_evaluation.png)
+
+---
+
+### 7. Generated PDF Report
+
+Automatically generated professional PDF report containing the waveform, transcription, semantic analysis, score, and evaluation.
+
+![Generated PDF Report](Assets/screenshots/07_generated_pdf_report.png)
+
+## 🎥 Project Demo
+
+Download or watch the demo video:
+
+[📹 Project Demo Video](Assets/demo/project_demo.mp4)
+
+---
+
+## 📄 Documentation
+
+The repository includes complete SmartBridge project documentation:
+
+- Brainstorming & Ideation
+- Requirement Analysis
+- Project Design
+- Project Planning
+- Development Phase
+- Testing
+- Documentation
+- Project Demonstration
+
+---
+
+## 🎓 Academic Information
+
+**Project Title**
+
+Voice-Based Concept Understanding Analyzer
+
+**Domain**
+
+Artificial Intelligence | Machine Learning | Speech Processing
+
+
+**Department**
+
+Artificial Intelligence And Machine Learning
+---
+
+## 🔮 Future Enhancements
+
+- Multi-language speech support
+- Real-time voice evaluation
+- Cloud database integration
+- User authentication
+- Student performance dashboard
+- Mobile application
+- Teacher analytics
+- Advanced AI feedback generation
+
+---
+
+## 👨‍💻 Developed By
+
+**Danturthi Venkata Satya Mythili Ramani**
+
+B.Tech Aiml
+
+
+---
+
+## 📜 License
+
+This project is developed for educational and academic purposes.
+
+---
+
+## ⭐ Acknowledgements
+
+- SmartBridge
+- Skill Wallet
+- Streamlit
+- OpenAI Whisper
+- Sentence Transformers
+- Python Open Source Community
